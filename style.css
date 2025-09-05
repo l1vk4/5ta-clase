@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'StretchPro';
+  src: url('fonts/StretchPro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body { /* omo no tiene nada la inicio, solo está buscando a este elemento */
+  margin: 0;
+  padding: 0;
+  background: #BBCEFF;
+  color: #F29B3B; /* de la tipografía */
+  font-family: Helvetica, Arial, sans-serif;
+
+} /* todo esto es parte de solo el body, se aplica solo ahí */
+
+a{ /* significa que todos los vídulos vana  tener rstas carateríticas */
+  color: #52604A;
+  text-decoration: none; /* si le pongo el none significa que no tiene la línea de abajo*/
+  transition: all ease 1s;
+}
+
+a:hover{ /* es cuando pongo el cursor arriba hay un cambio. "hover" significa que el elemento está en una situación particular */
+  color: #F27794;
+  text-decoration: underline;
+  transition: all ease 2s;
+}
+
+a:hover:after{ 
+  content:"🧊";
+}
+
+h1 {
+    font-size: calc(3rem + 5vw);
+}
+
+
+#bloque{ /* la cambio el nombre de main a !bloque" par solo hacer el cambio a eese main. puedo tener otro main y este no va a cambiar por su id */
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 4rem);
+    margin: auto;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
+.xmas {
+  font-family: 'StretchPro', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ajuste {
+  font-size: 120%;
+}
